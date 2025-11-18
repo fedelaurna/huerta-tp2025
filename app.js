@@ -1,6 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js"; 
 import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-database.js";
- // 🔧 CONFIGURACIÓN DE FIREBASE
  const firebaseConfig = { apiKey: "AIzaSyCrB4xgCBRmpujDcvOOihSVZ6MIFOPE56M",
   authDomain: "proyectoclase1-2025.firebaseapp.com", 
   databaseURL: "https://huertamaxi2025-default-rtdb.firebaseio.com", 
@@ -26,3 +25,4 @@ onValue(refHuerta, (snapshot) => {
       Humedad del Suelo: ${huerta.humedadSuelo}%
     `
   }})
+
